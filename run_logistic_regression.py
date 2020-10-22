@@ -11,7 +11,8 @@ print(target)
 data = dataset.iloc[:,3:9].values
 print(data)
 
-machine = linear_model.LinearRegression()
+# machine = linear_model.LinearRegression()
+machine = linear_model.LogisticRegression()
 
 machine.fit(data, target)
 
